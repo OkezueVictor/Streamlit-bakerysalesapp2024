@@ -89,6 +89,7 @@ except ValueError as e:
 
 # Sales analysis
 try:
+    st.write("# Sales Analysis for Selected Products")
     if len(filtered_table) > 0:
         daily_sales = filtered_table.groupby('date')['sales'].sum()
     else:
