@@ -64,8 +64,8 @@ st.subheader("Calculations")
 col1, col2, col3 = st.columns(3)
 
 col1.metric("No of transactions", f"{total_transactions:,}")
-col2.metric("Total Quantity", f"{np.round(),total_qty:,}")
-col3.metric("Total Sales", f"${np.round(),total_sales:,}")
+col2.metric("Total Quantity", f"{total_qty:,}")
+col3.metric("Total Sales", f"${total_sales:,}")
 
 # end of metrics
 
